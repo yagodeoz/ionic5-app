@@ -1,4 +1,4 @@
-Título del Proyecto
+
 
 Proyecto de carrito de compras hecho con IONIC %
 
