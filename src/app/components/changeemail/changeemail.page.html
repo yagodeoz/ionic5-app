@@ -1,0 +1,66 @@
+<!-- /**
+ * Shoppr - E-commerce app starter Ionic 4(https://www.enappd.com)
+ *
+ * Copyright © 2018-present Enappd. All rights reserved.
+ *
+ * This source code is licensed as per the terms found in the
+ * LICENSE.md file in the root directory of this source .
+ */ -->
+
+<ion-header>
+  <ion-toolbar color="mytheme">
+    <ion-buttons slot="start">
+        <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Cambiar Email</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item color="light" lines="none">
+    <ion-col padding-vertical>
+      <ion-row>
+        <h4 class="small" no-margin><strong>Use este formulario para cambiar su dirección de correo electrónico</strong></h4>
+      </ion-row>
+      <ion-row>
+        <h4 class="small" no-margin>Deberá confirmar su nueva dirección en un correo electrónico que le enviemos.</h4>
+      </ion-row>
+    </ion-col>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-col padding-vertical>
+      <ion-row>
+        <h4 class="small" no-margin>Dirección de email actual</h4>
+      </ion-row>
+      <ion-row>
+        <h4 class="small" no-margin>{{dataService.current_user.email}}</h4>
+      </ion-row>
+    </ion-col>
+  </ion-item>
+  <div class="sep"></div>
+  <ion-item lines="none">
+    <ion-col padding-vertical>
+      <ion-row>
+        <h4 class="small" no-margin>Nueva dirección de correo electrónico</h4>
+      </ion-row>
+      <ion-row>
+        <ion-input class="input" placeholder="Enter e-mail address" type="email" padding-horizontal></ion-input>
+      </ion-row>
+    </ion-col>
+  </ion-item>
+  <ion-item lines="none">
+    <ion-col padding-vertical>
+      <ion-row>
+        <h4 class="small" no-margin>Confirmar el correo</h4>
+      </ion-row>
+      <ion-row>
+        <ion-input class="input" placeholder="Confirm new e-mail address" type="email" padding-horizontal></ion-input>
+      </ion-row>
+      <ion-row>
+        <ion-button expand="block" (click)="fun.back()" color="mytheme"><strong class="white">Guardar</strong></ion-button>
+      </ion-row>
+    </ion-col>
+  </ion-item>
+
+
+</ion-content>
